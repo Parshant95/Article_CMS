@@ -63,6 +63,7 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_9E960B3D56AA4D9B89A5F03E2D5044B8 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D80C720BFEB8460C8014D1E13AD7A8AD }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_94F6024AC53C4F8EA97B54FA32668A88 }}
@@ -73,4 +74,5 @@ jobs:
         with:
           app-name: 'articelcms'
           slot-name: 'Production'
+
           
