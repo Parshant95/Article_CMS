@@ -20,3 +20,4 @@ jobs:
           app-name: 'articelcms'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           package: .
+
